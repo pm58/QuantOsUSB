@@ -1,5 +1,0 @@
-mod:
-  sys_booking: {enabled: false}
-  sys_funcat: {enabled: true}
-  sys_incremental: {enabled: false}
-  sys_stock_realtime: {enabled: false}
