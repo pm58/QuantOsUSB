@@ -1,0 +1,9 @@
+
+echo "列表查看有没有 matplotlibrc 文件缺失"
+ls ~/.matplotlib
+
+echo "修复matplotlibrc缺失"
+cp /Volumes/QuantOsUSB/matplotlib/matplotlibrc ~/.matplotlib/matplotlibrc
+
+echo "列表检查 matplotlibrc 文件"
+ls ~/.matplotlib

@@ -4,6 +4,6 @@ echo "使用组合键 control+C 可以退出！！！"
 
 cd /Volumes/data/data/mongodb/bin
 
-./mongod -f mongodb.conf
+./mongod --ipv6 -f mongodb.conf
 
 cd

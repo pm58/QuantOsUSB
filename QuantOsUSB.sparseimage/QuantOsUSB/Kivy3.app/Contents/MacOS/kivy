@@ -1,0 +1,2 @@
+#!/bin/bash
+open -a Terminal.app /Volumes/QuantOsUSB/QuantOsUSB/Kivy.app/Contents/MacOS/mongod.sh & open -a Terminal.app /Volumes/QuantOsUSB/QuantOsUSB/Kivy.app/Contents/MacOS/kivy.sh

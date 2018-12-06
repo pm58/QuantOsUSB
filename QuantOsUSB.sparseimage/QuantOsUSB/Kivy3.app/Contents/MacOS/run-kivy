@@ -1,0 +1,40 @@
+
+echo "======================启动 kivy.app 终端========================"
+echo "===检查kivy路径==="
+which kivy
+
+echo "===测试qtusb是否安装成功，输入 import kivy 显示状态信息是否正常==="
+echo "===检查列表==="
+cd #/Volumes/QuantOsUSB
+ls
+kivy -m pip list
+
+echo "===测试qtusb是否安装成功，输入 import kivy 显示状态信息是否正常==="
+echo "===使用组合键 control+d 可以退出==="
+kivy
+
+echo "===进入venv虚拟容器==="
+source /Volumes/QuantOsUSB/QuantOsUSB/kivy.app/Contents/Resources/venv/bin/activate
+
+echo "===检查列表==="
+kivy -m pip list
+python -m pip list
+
+echo "===测试qtusb是否安装成功，输入 import kivy 显示状态信息是否正常==="
+echo "===使用组合键 control+d 可以退出==="
+kivy
+
+echo "===测试qtusb是否安装成功，输入 import kivy 显示状态信息是否正常==="
+echo "===使用组合键 control+d 可以退出==="
+python
+
+rqalpha update-bundle & quantaxis & jupyter notebook
+
+echo "===venv虚拟容器退出==="
+deactivate
+
+echo "===启动notebook venv 虚拟容器==="
+echo "使用 control-c 停止此服务器并关闭所有内核"
+kivy -m jupyter notebook
+
+echo "系统完全退出关闭终端"
