@@ -1,0 +1,18 @@
+稀疏磁盘打包版本说明：
+属于隔离版本。不同环境不同配置各种环境独立。用相关的run终端去启动进入web。
+
+稀疏磁盘捆绑打包说明：
+属于统一环境，统一了环境一次都在app中运行终端通过web进入。
+实验性质。可能有环境bug，一个app搞定mongdb启动和wen启动。站空间小很多。
+建议吧data放容量大的硬盘空间，通过更新数据库逐渐占满50GB空间。quantaxis分时数据更新大约站33GB。
+吧QuantOsUSB放速度快的硬盘空间。
+双击QuantOsUSB。app一次启动mongodb和web环境。
+data盘50GB空间可以用，
+QuantOsUSB磁盘空间20GB可用。
+如果不可读写用点击磁盘右键显示简介，加上电脑用户读写权限即可。
+
+注意：磁盘名称不能修改。修改后系统路径错误！！！！
+运行时候把data和QuantOsUSB同时打开就行了
+运行QuantOsUSB。app，如果出错，运行一下QuantOsUSB inatall 安装基本的环境
+启动后可以双击RUN-mongo 输入show dbs 查询数据库状态或者用Robo3T。app也行。
+mongodb支持ipv6访问和通过电脑ip路由器访问。
