@@ -46,8 +46,13 @@ kivy
 kivy2
 kivy3
 
+echo "进入虚拟机环境"
 source /Volumes/QuantOsUSB/QuantOsUSB/kivy.app/Contents/Resources/venv/bin/activate
+
+echo "安装配置环境"
 kivy -m pip install -r /Volumes/QuantOsUSB/QuantOsUSB/kivy-m_pip_freeze.txt
 python -m pip install -r /Volumes/QuantOsUSB/QuantOsUSB/python-m_pip_freeze.txt
 pip install -r /Volumes/QuantOsUSB/QuantOsUSB/pip_freeze.txt
+
+echo "退出虚拟机环境"
 deactivate
